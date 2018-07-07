@@ -10,6 +10,8 @@ import { RosterPage } from '../pages/roster/roster';
 import { OverviewPage } from '../pages/overview/overview';
 import { RaidsPage } from '../pages/raids/raids';
 import { SettingsPage } from '../pages/settings/settings';
+import { EventPage } from '../pages/event/event';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +30,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
+      { title: 'Event', component: EventPage },
       { title: 'Summary', component: SummaryPage },
       { title: 'Roster', component: RosterPage },
       { title: 'Overview', component: OverviewPage },

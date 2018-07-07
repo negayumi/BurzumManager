@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the RosterPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AddrosterPage } from '../addroster/addroster';
 
 @IonicPage()
 @Component({
@@ -16,6 +11,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RosterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  private addRoster(){
+    this.navCtrl.push(AddrosterPage);
   }
 
   ionViewDidLoad() {

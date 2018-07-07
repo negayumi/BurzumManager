@@ -20,7 +20,7 @@ export class OverviewPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
   }
 
-  loadGuildCharacters(){
+  /*loadGuildCharacters(){
     this.http.get('https://eu.api.battle.net/wow/guild/Krasus/Burzum?fields=members&locale=fr_FR&apikey=parv8c9epdb4kt4hadkzct348dufea48')
       .map(res => res.json())
       .subscribe(data => {
@@ -29,10 +29,10 @@ export class OverviewPage {
       },err => {
         console.log(err);
       });
-  }
+  }*/
 
   ionViewDidLoad() {
-    this.loadGuildCharacters();
+    //this.loadGuildCharacters();
   }
 
 }
